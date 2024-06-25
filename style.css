@@ -1,0 +1,121 @@
+body {
+  position: relative;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#websites {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#websites div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#websites div:hover {
+  cursor: pointer;
+  border: 2px solid red;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p,
+span,
+figcaption {
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+p,
+#programming {
+  width: 80%;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+#share {
+  width: 60px;
+  height: 30px;
+  background-color: #30d5c8;
+  border: none;
+  border-radius: 5px;
+}
+
+#share:hover,
+#logo:hover {
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+#logo:hover {
+  border-radius: 50%;
+}
+
+#share-display {
+  position: fixed;
+  padding: 10px;
+  background-color: white;
+  width: 500px;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: gray;
+}
+
+#share-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#share-display img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+h3 {
+  overflow-x: scroll;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.dim {
+  opacity: 0.5;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  p,
+  #programming {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #share-display {
+    width: calc(100% - 8px);
+    box-sizing: border-box;
+  }
+}

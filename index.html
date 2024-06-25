@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share Button</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <img src="./favicon/favicon.ico" id="logo" alt="logo" width="50" />
+      <span>Creator / Blogs / Programming</span>
+      <button title="Share Your Blog" id="share" type="button">Share</button>
+    </header>
+    <main>
+      <h1>Programming</h1>
+      <img src="./imgs/programming.jpg" alt="programming" id="programming" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aperiam iure non rem, sit cumque consectetur
+        est odit odio porro delectus doloremque ipsum ratione tenetur. Sunt nisi voluptatibus enim eius? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Culpa doloremque nobis quod dolores cumque vitae doloribus corporis
+        eum harum, nam itaque, maiores odit beatae sequi optio quibusdam ea! Quo, suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aperiam iure non rem, sit cumque consectetur
+        est odit odio porro delectus doloremque ipsum ratione tenetur. Sunt nisi voluptatibus enim eius? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Culpa doloremque nobis quod dolores cumque vitae doloribus corporis
+        eum harum, nam itaque, maiores odit beatae sequi optio quibusdam ea! Quo, suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aperiam iure non rem, sit cumque consectetur
+        est odit odio porro delectus doloremque ipsum ratione tenetur. Sunt nisi voluptatibus enim eius? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Culpa doloremque nobis quod dolores cumque vitae doloribus corporis
+        eum harum, nam itaque, maiores odit beatae sequi optio quibusdam ea! Quo, suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aperiam iure non rem, sit cumque consectetur
+        est odit odio porro delectus doloremque ipsum ratione tenetur. Sunt nisi voluptatibus enim eius? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Culpa doloremque nobis quod dolores cumque vitae doloribus corporis
+        eum harum, nam itaque, maiores odit beatae sequi optio quibusdam ea! Quo, suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aperiam iure non rem, sit cumque consectetur
+        est odit odio porro delectus doloremque ipsum ratione tenetur. Sunt nisi voluptatibus enim eius? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Culpa doloremque nobis quod dolores cumque vitae doloribus corporis
+        eum harum, nam itaque, maiores odit beatae sequi optio quibusdam ea! Quo, suscipit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aperiam iure non rem, sit cumque consectetur
+        est odit odio porro delectus doloremque ipsum ratione tenetur. Sunt nisi voluptatibus enim eius? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Culpa doloremque nobis quod dolores cumque vitae doloribus corporis
+        eum harum, nam itaque, maiores odit beatae sequi optio quibusdam ea! Quo, suscipit.
+      </p>
+    </main>
+    <div id="share-container" class="hide">
+      <div id="share-display">
+        <h2>Share</h2>
+        <h3>http://127.0.0.1:5500/10.%20Social%20Share%20Button/index.html</h3>
+        <div id="websites">
+          <div>
+            <img src="./imgs/instagram.jpg" alt="instagram logo" />
+            <figcaption>Instagram</figcaption>
+          </div>
+          <div>
+            <img src="./imgs/facebook.jpg" alt="facebook logo" />
+            <figcaption>Facebook</figcaption>
+          </div>
+          <div>
+            <img src="./imgs/twitter.png" alt="twitter logo" />
+            <figcaption>Twitter</figcaption>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p id="footer"></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $("#footer").text(`Written by John Doe. © ${new Date().getFullYear()}`);
+      $("#share").click(() => {
+        $("main, footer, header").toggleClass("dim");
+        $("#share-container").toggleClass("hide");
+      });
+    </script>
+  </body>
+</html>
